@@ -17,13 +17,13 @@ namespace Test_Suites.PaymentArrangement
 
         #region Queries---------------------------------------------------------------------------------------
 
-        private const string RANDOM_DEBTOR_QUERY = @"SELECT TOP(1) ddd.DebtorentityID FROM Debt.DebtDebtorDetail ddd JOIN Debt.Debt  d ON ddd.DebtID = d.DebtID WHERE d.DebtStatusID = 10 and TrancheID=831";
+        private const string RANDOM_DEBTOR_QUERY = @"SELECT TOP(1) ddd.DebtorEntityID FROM Debt.DebtDebtorDetail ddd JOIN Debt.Debt  d ON ddd.DebtID = d.DebtID WHERE d.DebtStatusID = 10 and TrancheID=831";
 
         #endregion Queries---------------------------------------------------------------------------------------
 
         #region Queries---------------------------------------------------------------------------------------------
 
-        private const string RANDOM_DEBT_QUERY = @"SELECT TOP(1) ddd.DebtID FROM Debt.DebtorentityID ddd JOIN Debt.Debt  d ON ddd.DebtID = d.DebtID WHERE d.DebtStatusID = 10 and TrancheID=831";
+        private const string RANDOM_DEBT_QUERY = @"SELECT TOP(1) ddd.DebtID FROM Debt.DebtDebtorDetail ddd JOIN Debt.Debt  d ON ddd.DebtID = d.DebtID WHERE d.DebtStatusID = 10 and TrancheID=831";
 
         #endregion Queries---------------------------------------------------------------------------------------------
 

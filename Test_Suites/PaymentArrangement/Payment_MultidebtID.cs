@@ -26,6 +26,7 @@ namespace Test_Suites.PaymentTransaction
         #region Queries -------------------------------------------------------
 
         private const string RANDOM_DEBT_QUERY = @"SELECT TOP(1) ddd.debtID FROM Debt.DebtDebtorDetail ddd JOIN Debt.Debt  d ON ddd.DebtID = d.DebtID WHERE d.DebtStatusID =10 and TrancheID=852";
+        private readonly double actualdebtstatus;
 
         #endregion Queries ----------------------------------------------------
 
@@ -110,7 +111,7 @@ namespace Test_Suites.PaymentTransaction
             var debt = string.Format("debt{0}DebtStatusID", debtID);
             accessor.GetElementByID(debt);
 
-            var actualdebtstatus = accessor.GetElementValue(debt, 5);
+            
 
             Assert.AreEqual("number:10", actualdebtstatus);
 

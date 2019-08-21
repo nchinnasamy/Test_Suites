@@ -99,7 +99,7 @@ namespace Test_Suites.DocumentRequest
 
         [OneTimeTearDown]
 
-        public void teardown()
+        public void Teardown()
         {
             accessor.Close();
         }
@@ -156,7 +156,8 @@ namespace Test_Suites.DocumentRequest
             documentID = GetDocumentRequestID();
 
             var Document=accessor.GetPanel(string.Format("debt{0}DocRequest{1}", DebtID, documentID));
-            Document.Click();
+            
+            
 
             var DocumentType = string.Format("debt{0}DocRequest{1}DocumentTypeID", DebtID, documentID);
             var DocumentType_value = accessor.GetElementValue(DocumentType, 2);
@@ -169,16 +170,16 @@ namespace Test_Suites.DocumentRequest
             accessor.ClickTab(string.Format("#debtor{0}Contact",debtorID));
 
             var Contactpanel = accessor.GetPanel(string.Format("debtor{0}DebtorContact",debtorID));
-            Contactpanel.Click();
+           
 
             var ExpandContactHold = accessor.GetPanel(string.Format("debtor{0}DebtorHolds", debtorID));
-            ExpandContactHold.Click();
+           
             
 
             HoldId = GetHoldID(); 
 
             var Expand_HOLDID = accessor.GetPanel(string.Format("debtorHold{0}", HoldId));
-            Expand_HOLDID.Click();
+          
 
             
 

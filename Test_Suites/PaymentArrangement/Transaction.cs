@@ -71,14 +71,7 @@ namespace Test_Suites.TEST
 
             accessor.ClickTab(string.Format("#debtor{0}BankDetails", debtorID));
 
-            accessor.WaitForElementXpathToBeDisplayed(string.Format("//div[@collapsible-panel='debtor{0}CreditCards']", debtorID), 5);
-
-
-            // Get the add address button
-            IWebElement addButton = accessor.GetElementByXPath(string.Format("//div[@collapsible-panel='debtor{0}CreditCards']//button[@ng-click='accountCtrl.model.addCreditCard($event)']", debtorID));
-            accessor.ClickElement(addButton);
-
-            //  var radioLabelXpath = string.Format("//label[@for='{0}']", string.Format("debtor{0}CreditCard{1}CreditCardTypeIDMaster", debtorID, -1));
+          
 
 
             //accessor.WaitForElementXpathToBeDisplayed(radioLabelXpath, 3);

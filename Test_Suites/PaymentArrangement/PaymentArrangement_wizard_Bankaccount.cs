@@ -33,7 +33,7 @@ namespace Test_Suites.PaymentArrangement
 
         #region Queries------------------------------------------------------------------------------------------
 
-        private const string RANDOM_ARRANGEMENT_QUERY = @"SELECT TOP(1) ArrangementID  FROM Debt.Debt ddd JOIN Pay.Arrangement d ON ddd.DebtID = d.DebtID WHERE ddd.DebtStatusID= 10 and TrancheID=697 and d.CommencementDate='2019-06-18' ORDER BY ArrangementID DESC";
+        private const string RANDOM_ARRANGEMENT_QUERY = @"SELECT TOP(1) ArrangementID  FROM Debt.Debt ddd JOIN Pay.Arrangement d ON ddd.DebtID = d.DebtID WHERE ddd.DebtStatusID= 10 and TrancheID=697 and d.CommencementDate='2019-08-16' ORDER BY ArrangementID DESC";
 
         #endregion Queries-------------------------------------------------------------------------------------------- 
 

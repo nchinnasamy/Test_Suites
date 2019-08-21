@@ -80,7 +80,7 @@ namespace Test_Suites.TEST
 
             accessor.ClickTab(string.Format("#debtor{0}BankDetails", debtorID));
 
-            accessor.WaitForElementXpathToBeDisplayed(string.Format("//div[@collapsible-panel='debtor{0}CreditCards']", debtorID), 5);
+          
 
             System.Threading.Thread.Sleep(2000);
 
@@ -120,7 +120,7 @@ namespace Test_Suites.TEST
             
             accessor.ClickTab(string.Format("#debtor{0}BankDetails", DebtID));
 
-            accessor.WaitForElementXpathToBeDisplayed(string.Format("//div[@collapsible-panel='debtor{0}BankAccounts']", debtorID), 10); 
+            
 
 
             IWebElement addBankbutton = accessor.GetElementByXPath(string.Format("//div[@collapsible-panel='debtor{0}BankAccounts']//button[@ng-click='accountCtrl.model.addBankAccount($event)']", debtorID));
@@ -157,7 +157,7 @@ namespace Test_Suites.TEST
 
             accessor.Open(string.Format(@"{0}/DebtDebtorDetails/Debt/{1}", accessor.BaseURL, DebtID));
             accessor.ClickTab(string.Format("#debt{0}PaymentArrangementsTab", DebtID));
-            accessor.WaitForElementXpathToBeDisplayed(string.Format("//div[@collapsible-panel='debt{0}PaymentArrangementsPanel']", DebtID), 5);
+          
 
 
             IWebElement Addpayment = accessor.GetElementByXPath(string.Format("//div[@collapsible-panel='debt{0}PaymentArrangementsPanel']//button[@ng-click='arrangementsCtrl.model.addArrangement($event)']", DebtID));
@@ -193,7 +193,7 @@ namespace Test_Suites.TEST
 
             accessor.Open(string.Format(@"{0}/DebtDebtorDetails/Debt/{1}", accessor.BaseURL, DebtID));
             accessor.ClickTab(string.Format("#debt{0}PaymentArrangementsTab", DebtID));
-            accessor.WaitForElementXpathToBeDisplayed(string.Format("//div[@collapsible-panel='debt{0}PaymentArrangementsPanel']", DebtID), 5);
+          
 
             
             IWebElement Addpayment = accessor.GetElementByXPath(string.Format("//div[@collapsible-panel='debt{0}PaymentArrangementsPanel']//button[@ng-click='arrangementsCtrl.model.addArrangement($event)']", DebtID));

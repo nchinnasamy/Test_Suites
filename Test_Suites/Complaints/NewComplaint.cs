@@ -82,7 +82,7 @@ namespace Test_Suites.Complaints
 
             var Madeby = string.Format("debtor{0}Complaint{1}ComplainerEntityID", debtorID, -1);
             accessor.WaitForElementToBeDisplayed(Madeby, 5);
-            accessor.SetElementByClick(accessor.GetElement(Madeby));
+            accessor.SetElementByClick(accessor.GetElementByID(Madeby));
 
             var ComplaintType = string.Format("debtor{0}Complaint{1}ComplaintCategoryID", debtorID, -1);
             accessor.WaitForElementToBeDisplayed(ComplaintType, 5);
