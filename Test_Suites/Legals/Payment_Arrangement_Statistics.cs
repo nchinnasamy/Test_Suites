@@ -188,7 +188,7 @@ namespace Test_Suites.Legals
             cardnumber.Click();
             accessor.SetElementValue(accessor.GetElementByXPath("//*[@id='creditCardNumber']"), "5163200000000008");
 
-            var card = accessor.GetElementByXPath("//*[@id='expiryDate']");
+            var card = accessor.GetElementByXPath("[@id='expiryDate']");
             card.Click();
             accessor.SetElementValue(accessor.GetElementByXPath("//*[@id='expiryDate']"), "08/2020");
 
