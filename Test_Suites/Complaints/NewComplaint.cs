@@ -68,6 +68,8 @@ namespace Test_Suites.Complaints
         }
         [Test]
 
+        //Add new complaint for the debt
+
         public void ComplaintInitialize()
         {
             debtorID = GetDebtorID();
