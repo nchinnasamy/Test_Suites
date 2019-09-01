@@ -172,13 +172,13 @@ namespace Test_Suites.DocumentRequest
             var Contactpanel = accessor.GetPanel(string.Format("debtor{0}DebtorContact",debtorID));
            
 
-            var ExpandContactHold = accessor.GetPanel(string.Format("debtor{0}DebtorHolds", debtorID));
+            var ExpandContactHold = accessor.GetPanel(string.Format("debtor{0}DebtorHolds", debtorID));   
            
             
 
             HoldId = GetHoldID(); 
 
-            var Expand_HOLDID = accessor.GetPanel(string.Format("debtorHold{0}", HoldId));
+            var Expand_HOLDID = accessor.GetPanel(string.Format("debtorHold{0}", HoldId)); 
           
 
             
